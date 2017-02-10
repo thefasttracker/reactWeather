@@ -1,5 +1,5 @@
-import ReactDOM from 'react-dom'
 import React, {Component, PropTypes} from 'react'
+import {Link, IndexLink} from 'react-router'
 
 export default class Nav extends Component {
 	constructor(props) {
@@ -10,7 +10,12 @@ export default class Nav extends Component {
 
   render() {
 		return(
-			<h2>Nav Component</h2> 
+			<div>
+				<h2>Nav Component</h2>
+				<IndexLink to="/" activeClassName='active' activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink>
+				<Link to="/about" activeClassName='active' activeStyle={{fontWeight: 'bold'}}>About</Link>
+				<Link to="/examples" activeClassName='active' activeStyle={{fontWeight: 'bold'}}>Examples</Link>
+			</div>
 		)
 	}
 }

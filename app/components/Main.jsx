@@ -1,6 +1,6 @@
-import ReactDOM from 'react-dom'
 import React, {Component, PropTypes} from 'react'
 import Nav from 'Nav'
+import Weather from 'Weather'
 
 export default class Main extends Component {
 	constructor(props) {
@@ -13,7 +13,7 @@ export default class Main extends Component {
 		return(
 			<div>
 				<Nav />
-				<h2>Main Component</h2> 
+				{this.props.children}
 			</div>	
 		)
 	}
