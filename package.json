@@ -6,7 +6,7 @@
   "author": "ft2",
   "license": "ISC",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.js"
   },
   "dependencies": {
     "axios": "^0.15.3",
