@@ -7,8 +7,6 @@
   "license": "ISC",
   "scripts": {
     "start": "node server.js",
-    "build": "webpack",
-    "dev": "webpack-dev-server --hot --inline"
   },
   "dependencies": {
     "axios": "^0.15.3",
