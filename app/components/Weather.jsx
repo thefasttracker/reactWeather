@@ -34,7 +34,7 @@ export default class Weather extends Component {
 
   render() {
   	let {isLoading, location, temp} = this.state
-  	
+  
   	function renderMessage() { 
   		if (isLoading) {
   			return <h3>fetching weather...</h3>
