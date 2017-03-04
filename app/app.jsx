@@ -9,6 +9,9 @@ import 'style!css!foundation-sites/dist/css/foundation.min.css'
 
 $(document).foundation();
 
+//app css
+import 'style!css!applicationStyles'
+
 ReactDOM.render(
 	<Router history={hashHistory}>
 		<Route path="/" component={Main}>
